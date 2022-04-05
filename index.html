@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .tittle{
+    font-family: 'Open Sans', sans-serif;
+color: white;
+padding: 10px 25px;
+width: 85%;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+  }
+  .Api{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+padding: 10px 25px;
+width: 10%;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+  }
+  body{
+
+  background-color: rgba(54,57,63,255);
+  }
+  .docs_left{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+padding: 10px 25px;
+width: 100px;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+  }
+  .option:hover{
+    color: aqua;
+    cursor: pointer;
+  }
+  .Frame{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+padding: 10px 25px;
+width: 80%;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+margin: auto;
+  
+  }
+</style>
+<script>
+function setcont(tab) {
+  if (tab === "welcome") {
+document.getElementById('frame').innerHTML = "Hello this is official site of The Flying Dutchman";
+  }else if (tab === "params"){
+    document.getElementById('frame').innerHTML = "id - id of that user";
+  }else if (tab === "example") {
+    document.getElementById('frame').innerHTML = "some example";
+  }
+}
+</script>
+<body>
+  <center>
+    <div class="tittle">
+      <h1>Flying Dutchman</h1>
+    </div>
+    
+    <br>
+    <a class="Api">API - https://dutchman.ga/v1/:id</a>
+  </center>
+  <br>
+  <div class="docs_left">
+<a class="option" onclick="setcont('welcome')">Welcome</a>
+<br>
+<a class="option" onclick="setcont('params')">Params</a>
+<br>
+
+<a class="option" onclick="setcont('example')">Example</a>
+  </div>
+  <br>
+  <div class="Frame" id="frame">
+<a>Hello this is official site of The Flying Dutchman</a>
+  </div>
+</body>
+</html>
