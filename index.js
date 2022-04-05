@@ -61,4 +61,4 @@ app.listen(port, () => {
 })
 
 
-client.login("OTYwMjEwNDEzOTEwMzg4NzU2.YknHog.dJgCJSgp_piKnnJDME7AfSmmwGc")
+client.login("token")
