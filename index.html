@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Flying Dutchman</title>
+  <link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/spongebob/images/0/09/Screen_Shot_2019-10-11_at_11.43.29_PM.png/revision/latest?cb=20191012034355">
+</head>
+<style>
+  .tittle{
+    transition-duration: 1s;
+    font-family: 'Open Sans', sans-serif;
+color: white;
+padding: 10px 25px;
+width: 85%;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+  }
+  .Api{
+    transition-duration: 1s;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+padding: 10px 25px;
+width: 10%;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+  }
+  body{
+
+  background-color: rgba(54,57,63,255);
+  }
+  .docs_left{
+    transition-duration: 1s;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+padding: 10px 25px;
+width: 100px;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+  }
+  .option:hover{
+    transition-duration: 1s;
+    color: aqua;
+    cursor: pointer;
+  }
+  .Frame{
+    transition-duration: 1s;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+padding: 10px 25px;
+width: 80%;
+background-color: rgba(32,34,37,255);
+border-radius: 10px;
+margin: auto;
+  
+  }
+  img{
+    border-radius: 10px;
+    transition-duration: 1s;
+  }
+  img:hover{
+    transition-duration: 1s;
+    src: url();
+  }
+</style>
+<script>
+function setcont(tab) {
+  if (tab === "welcome") {
+document.getElementById('frame').innerHTML = "Hello this is official site of The Flying Dutchman - <a href='https://discord.gg/DeuuUbS3'>https://discord.gg/DeuuUbS3</a>";
+  }else if (tab === "params"){
+    document.getElementById('frame').innerHTML = "id - id of that user";
+  }else if (tab === "example") {
+    document.getElementById('frame').innerHTML = "https://dutchman.ga/v1/00000000";
+  }
+}
+
+</script>
+<body>
+
+  <center>
+    <div class="tittle">
+      <h1>The Flying Dutchman</h1>
+    </div>
+    
+    <br>
+    <a class="Api">API - https://dutchman.ga/v1/:id </a>
+    <br>
+    <br>
+     <a class="Api">Img - https://dutchman.gq/presense/:id</a>
+  </center>
+  <br>
+  <div class="docs_left">
+<a class="option" onclick="setcont('welcome')">Welcome</a>
+<br>
+<a class="option" onclick="setcont('params')">Params</a>
+<br>
+
+<a class="option" onclick="setcont('example')">Example</a>
+  </div>
+  <br>
+  <center>
+    <img src="https://static.wikia.nocookie.net/spongebob/images/0/09/Screen_Shot_2019-10-11_at_11.43.29_PM.png/revision/latest?cb=20191012034355">
+  </center>
+ 
+  <div class="Frame" id="frame">
+<a>Hello this is official site of The Flying Dutchman -</a>
+<a href='https://discord.gg/DeuuUbS3'>https://discord.gg/DeuuUbS3</a>
+    <br>
+    <a>Example - </a>
+    <img src="https://dutchman.gq/presence/537954743998349315"> 
+  </div>
+
+  <img src="http://localhost:3000/user/537954743998349315">
+</body>
+</html>
