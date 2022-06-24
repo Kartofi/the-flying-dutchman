@@ -170,4 +170,4 @@ app.listen(port, () => {
 })
 
 
-client.login("OTYwMjEwNDEzOTEwMzg4NzU2.YknHog.BGfN0-qmZAK_f3XyamYnL9kQ6Y0")
+client.login("@")
